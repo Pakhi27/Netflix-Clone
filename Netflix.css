@@ -1,0 +1,354 @@
+body {
+  background-color: black;
+}
+
+.Logo {
+  width: 200px;
+  height: 100px;
+  position: static;
+  left: 0;
+  top: 0;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 500px;
+}
+
+.container::before {
+  content: "";
+  background-image: url('Netflix background.png');
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: blur(4px);
+  z-index: -1;
+}
+
+.container .blur-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.container .header,
+.container .Container {
+  position: relative;
+  z-index: 1;
+}
+
+.header button {
+  position: absolute;
+  top: 30px;
+  right: calc(5% + 100px);
+}
+
+.header .sign-in {
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  right: calc(5% + 80px);
+  background-color: #E50914;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  text-decoration: none;
+}
+
+.container .dropdown,
+.container .dropdown-content {
+  position: absolute;
+  top: 0px;
+  right: 10%;
+}
+
+
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid white;
+  cursor: pointer;
+  width: 150px;
+  border-radius: 5px;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: blue;
+}
+
+.Container {
+  color: white;
+  margin-top: 5%;
+  margin-left: 0%;
+
+  text-align: center;
+}
+
+.Container h1 {
+  font-weight: 500px;
+  font-size: 3em;
+  filter: brightness(150%);
+}
+
+.Container h2 {
+  font-size: 1.5em;
+  margin: 0 0 40px;
+}
+
+.Container input {
+  width: 100%;
+  max-width: 300px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.Container .Get-started {
+  background-color: #E50914;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.Container .Get-started:hover {
+  background-color: #ff6666;
+}
+
+.H2 {
+  margin-left: 11%;
+  color: white;
+  margin-top: 50px;
+  font-size: 1.5em;
+}
+
+.section1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 5%;
+}
+
+.Column1,
+.Column2,
+.Column3,
+.Column4 {
+  flex: 1;
+  margin: 0 8px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg, #0c162a, #24062c);
+  padding: 10px;
+  width: 100px;
+  height: 300px;
+  border-radius: 8px;
+  font-size: 20px;
+  position: relative;
+  font-size: 20px;
+  font-weight: 200px;
+}
+
+.Column1 h2,
+.Column2 h2,
+.Column3 h2,
+.Column4 h2 {
+  text-align: left;
+  white-space: nowrap;
+}
+
+.Column1 img,
+.Column2 img,
+.Column3 img,
+.Column4 img {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.section2 {
+  display: inline-block;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+  flex: 1;
+  margin: 5px;
+  background: rgb(46, 45, 45);
+  color: white;
+  width: 100%;
+  max-width: 650px;
+  max-height: 70px;
+  border-radius: 2px;
+  margin-left: 11%;
+  font-size: 15px;
+  padding: 10px 20px;
+}
+
+.box1 h2,
+.box2 h2,
+.box3 h2,
+.box4 h2,
+.box5 h2,
+.box6 h2 {
+  font-size: 25px;
+}
+
+.box1 .toggle,
+.box2 .toggle,
+.box3 .toggle,
+.box4 .toggle,
+.box5 .toggle,
+.box6 .toggle {
+  font-size: 45px;
+  float: right;
+  top: 50%;
+  transform: translateY(-120%);
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover,
+.box5:hover,
+.box6:hover {
+  background: grey;
+}
+
+.content {
+  display: none;
+  font-size: 25px;
+  margin-top: 50px;
+}
+
+.Section2 input {
+  margin-left: 11%;
+  width: 100%;
+  max-width: 600px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 2px;
+}
+
+.Section2 button {
+  background-color: #E50914;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.H3,
+H5 {
+  margin-left: 11%;
+  color: rgb(133, 131, 131);
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.footer {
+  display: flex;
+  margin-left: 10%;
+}
+
+.c1,
+.c2,
+.c3,
+.c4 {
+  display: inline-block;
+  color: white;
+  margin: 0 20px;
+  color: rgb(133, 131, 131);
+}
+
+#Btn,
+#Dropdown {
+  margin-left: 11%;
+  margin-top: 2%;
+}
+
+a {
+  color: white;
+}
+
+a :hover {
+  color: red;
+}
+
+@media screen and (max-width: 768px) {
+
+  .header button,
+  .header .sign-in,
+  .container .dropdown,
+  .container .dropdown-content {
+    top: 20px;
+    right: 10px;
+  }
+
+  .Container {
+    margin-left: 0;
+    padding: 0 20px;
+  }
+
+  .Section2 button {
+    padding: 12px 16px;
+    font-size: 14px;
+    margin-left: 10%;
+    margin-top: 5%;
+  }
+
+  .footer {
+    display: inline-block;
+  }
+}
